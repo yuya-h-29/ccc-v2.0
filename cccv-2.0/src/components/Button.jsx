@@ -10,8 +10,24 @@ const Button = (props) => {
   return (
     <div className="button-area">
       <div className="slideShowBtn btn">
-        {hasStarted && <button>Go back</button>}
-        {hasStarted && <button>Next</button>}
+        {hasStarted && (
+          <button
+            onClick={() => {
+              props.previousSlide();
+            }}
+          >
+            Go back
+          </button>
+        )}
+        {hasStarted && (
+          <button
+            onClick={() => {
+              props.nextSlide();
+            }}
+          >
+            Next
+          </button>
+        )}
       </div>
 
       <div className="startBtn btn">
