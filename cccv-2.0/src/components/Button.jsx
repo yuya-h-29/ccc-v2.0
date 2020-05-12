@@ -26,6 +26,7 @@ const Button = (props) => {
           <button
             onClick={() => {
               startCCC();
+              props.getPictures();
             }}
           >
             Start CCC

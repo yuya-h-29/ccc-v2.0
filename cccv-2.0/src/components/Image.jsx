@@ -1,9 +1,12 @@
 import React from "react";
+import "./Image.css";
 
-const Image = (porps) => {
+const Image = (props) => {
   return (
     <div>
-      <h2>This is the image page!!!!!</h2>
+      {props.imgUrl.map((url) => {
+        return <img src={url} alt="img" className="img" />;
+      })}
     </div>
   );
 };
