@@ -15,18 +15,11 @@ const Button = (props) => {
       </div>
 
       <div className="startBtn btn">
-        {/* <button
-          onClick={() => {
-            startCCC();
-          }}
-        >
-          Start
-        </button> */}
         {!hasStarted && (
           <button
             onClick={() => {
               startCCC();
-              props.getPictures();
+              props.select5Slides();
             }}
           >
             Start CCC

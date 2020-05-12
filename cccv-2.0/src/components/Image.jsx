@@ -4,7 +4,7 @@ import "./Image.css";
 const Image = (props) => {
   return (
     <div>
-      {props.imgUrl.map((url) => {
+      {props.slides.map((url) => {
         return <img src={url} alt="img" className="img" />;
       })}
     </div>
